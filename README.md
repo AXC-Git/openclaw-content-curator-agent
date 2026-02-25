@@ -9,7 +9,7 @@
 ## Overview
 This agent turns a standard Telegram chat into a universal inbox for your research and content curation. Instead of manually categorizing bookmarks, you forward content to the bot, and it autonomously reads, summarizes, and routes the formatted data to your preferred storage solution (Obsidian or Notion).
 
-## ⚙️ Architecture Flow
+## Architecture Flow
 1. **Ingress:** User sends a message/link via Telegram.
 2. **Gateway:** OpenClaw webhook receives the payload.
 3. **Processing:** Local LLM extracts the core thesis, tags the content, and formats it into clean Markdown.
