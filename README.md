@@ -25,7 +25,7 @@ Because this agent handles file-system execution and API keys, it is designed wi
 Clone the repository and spin up the secure container:
 
 ```bash
-git clone [https://github.com/yourusername/openclaw-content-curator-agent.git](https://github.com/yourusername/openclaw-content-curator-agent.git)
+git clone openclaw-content-curator-agent.git
 cd openclaw-content-curator-agent
 cp .env.example .env
 docker-compose up --build
