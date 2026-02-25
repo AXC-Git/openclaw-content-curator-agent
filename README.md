@@ -34,12 +34,31 @@ docker-compose up --build
 <details>
 <summary>Click to view the required .env variables</summary>
 
-Code snippet
+```env
 TELEGRAM_BOT_TOKEN=your_token_here
 OPENCLAW_API_KEY=local_key_here
+
 # Storage Routing
 STORAGE_MODE=obsidian # or 'notion'
 OBSIDIAN_VAULT_PATH=/restricted/path/to/vault
 NOTION_API_KEY=your_notion_secret
 NOTION_DATABASE_ID=your_database_id
+```
+
 </details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
