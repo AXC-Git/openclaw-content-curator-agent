@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  openclaw-agent:
+    image: openclaw/openclaw:latest
+    container_name: openclaw-curator
+    env_file:
+      - .env
+    volumes:
+      # Mount your custom skill
+      - ./skills:/skills
+      # Mount the routing script
+      - ./src:/src
+      # SECURE MOUNT: Give access ONLY to the Obsidian vault directory
+      - ${OBSIDIAN_VAULT_PATH}:/vault
+    restart: unless-stopped
